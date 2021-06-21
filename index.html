@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS and bootstrap / removed most bootstrap tags from final design but left links in case come functionality needed
+    same for fonts, in case I want to experiment-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+    <!-- Container for Header -->
+    
+        <div class="row" id>
+            <div class="col-4" style="display: flex; justify-content: flex-end"><button id="view-scores" class="btn" a href="highscores.html">View/Hide Scores</button></div>
+            <div class="col-4"></div>
+            <div class="col-4"><h5 class="time">Time:60s</h5></div>
+        </div>
+    
+            <!-- Introduction-->
+          
+            <div class="container" id="intro">
+                
+                    <div>
+                        <h3 class="text-center">Test your Javascript knowlege</h3>
+                        <p>You have 60 seconds to answer five questions. Incorrect answers will deduct 10 seconds from ther timer. Your final score is based on time remaining and correct answers.</p>
+                        <button id="start" type="button" class="btn">Start</button>
+                    </div>
+                </div>
+                
+            
+            <!-- quiz section - loads questions and answers-->
+                <div class="container" id="questions">
+                    
+                    
+                        <p id="question"></p>
+                        <button id="answer1" value="0" type="button" class="ansBtn"></button>
+                        <button id="answer2" value="1" type="button" class="ansBtn"></button>
+                        <button id="answer3" value="2" type="button" class="ansBtn"></button>
+                        <button id="answer4" value="3" type="button" class="ansBtn"></button>
+                        
+                        <p id="feedback">
+                         
+                            <!-- Correct or Wrong will be added via JS -->
+                        </p>
+                    
+                </div>
+
+            <!-- Quiz Results, initials input-->
+                <div class="container" id="result">
+                        <h3>Done!</h3>
+                        <p>Your time remaining is <span id="score" class="pl-1"></span>s</p>
+                        <p>You had <span id="correct"></span> correct answers out of 5</p> 
+                        <p>Enter initials: <span class="ml-1"><input placeholder="initials" id="initials" /></span>
+                            <button id="submit-score" class="btn d-inline-block">Submit</button>
+                        </p>
+                    
+                </div>
+                
+
+                <div class="container" id="highscores">
+                    <h6>High Scores</h6>
+                    <ol id="score-list">                            
+                    </ol>
+                    <div><button id="goback" class="btn d-inline-block">Retake</button>
+                    <button id="clearscores" class="btn d-inline-block">Clear scores</button>
+                    </div>
+       
+    
+    
+    
+    <!-- Javascript-->  
+   <script src="script.js"></script>
+    
+</body>
+
+</html>

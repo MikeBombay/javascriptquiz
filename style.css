@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    background: #d4e0ee;
+}
+
+#column {
+    flex-direction: column;
+}
+
+#topline {
+    background-color: rgb(191, 196, 189);
+}
+
+#start {
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0;
+    background: #e7f1fa;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px 4px;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+
+}
+
+#submit-score, #clearscores, #goback {
+    height: 40px;
+    width: 100px;
+    background: #e7f1fa;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px 4px;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+
+}
+
+
+#start:hover, #submit-score:hover, #clearscores:hover, #goback:hover {
+    background: #095207;
+    color: #e7f1fa;
+}
+
+#view-scores {
+    height: 20px;
+    font-size: 16px; 
+}
+
+#intro, #questions, #result {
+    height: 360px;
+    width: 460px;
+    padding: 20px;
+    background: #e7f1fa;
+    border-radius: 10px 4px;
+    border: 1px solid #b0c4d8;
+    align-self: center;
+    position: static;
+
+}
+
+
+#intro #button {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+#questions {
+    /*    display: block;*/
+    height: 400px;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    font-size: 18px;
+    position: static;
+    align-content: center;
+    
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+
+    width: 300px;
+    height: 30px;
+    text-align: left;
+    background: #e7f1fa;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px 4px;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;  
+    outline: none;
+}
+
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover {
+    background: #095207;
+    color: #e7f1fa;
+}
+
+#result {
+    height: 400px;
+    padding: 20px;
+    background: #e7f1fa;
+    border-radius: 10px 10px;
+    border: 1px solid #b0c4d8;
+    display: flex; 
+    display: none;
+    position: static;
+
+}
+
+
+
+#highscores {
+    display: none;
+    height: auto;
+    width: 460px;
+    background: #e7f1fa;
+    border-radius: 10px 10px;
+    border: 1px solid #b0c4d8;
+    font-size: 12px;
+    align-self: center;
+    position:static;
+    flex-direction: row;
+    padding-bottom: 4px;
+}
+
+
+    

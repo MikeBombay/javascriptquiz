@@ -1,0 +1,35 @@
+ var quizQuestions=[{
+               question: "if, else and else if are examples of",
+    option1: "methods",
+    option2: "random comparisons",
+    option3: "conditional statements",
+    option4: "data types",
+    answer: 2
+},
+
+ {
+               question: "which is an example of an array?",
+    option1: "var z = x + y;",
+    option2: "document.getElementById("demo").innerHTML = 5 + 6;",
+    option3: "const cars = ["Saab", "Volvo", "BMW"];",
+    option4: "var car = {type:"Fiat", model:"500", color:"white"};",
+    answer: 2
+},
+
+ {
+ question: "how old are you?",
+    option1: "//this is a comment",
+    option2: "<!--this is a comment-->",
+    option3: "(this is a comment)",
+    option4: "/**this is a comment**/",
+    answer: 0
+},
+
+{
+ question: "what is up?",
+    option1: "//this is a comment",
+    option2: "<!--this is a comment-->",
+    option3: "(this is a comment)",
+    option4: "/**this is a comment**/",
+    answer: 3
+},

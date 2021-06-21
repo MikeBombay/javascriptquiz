@@ -80,7 +80,7 @@ function setTime() {
         timeLeft--;
         timeEl.textContent = `Time:${timeLeft}s`;
 
-        if (timeLeft === 0 || questionCount === quizQuestions.length) {
+        if (timeLeft <= 0 || questionCount === quizQuestions.length) {
             clearInterval(timerInterval);
             questionsEl.style.display = "none";
             resultEl.style.display = "block";

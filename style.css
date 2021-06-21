@@ -25,7 +25,7 @@ body {
 
 #start {
     height: 60px;
-    width: 200px;
+    width: 180px;
     text-align: center;
     padding: 20px 0;
     background: #e7f1fa;
@@ -64,7 +64,7 @@ body {
 
 #intro, #questions, #result {
     height: 360px;
-    width: 460px;
+    width: 400px;
     padding: 20px;
     background: #e7f1fa;
     border-radius: 10px 4px;
@@ -133,7 +133,7 @@ body {
 #highscores {
     display: none;
     height: auto;
-    width: 460px;
+    width: 400px;
     background: #e7f1fa;
     border-radius: 10px 10px;
     border: 1px solid #b0c4d8;
